@@ -14,27 +14,13 @@
 
     <h2>Car-calculator</h2>
 
-    <p><b>Марка автомобиля</b><Br>
-        <input type="radio" name="browser" value="30000"> Toyota<Br>
-        <input type="radio" name="browser" value="2000"> VAZ<Br>
-        <input type="radio" name="browser" value="50000"> Volvo<Br>
-        <input type="radio" name="browser" value="70000"> Tesla<Br>
-    </p>
+    <select id="firms"><b>Марка автомобиля</b>
+        <option value="30000"> Toyota<Br>
+        <option value="2000"> VAZ<Br>
+        <option value="70000"> Tesla<Br>
+    </select>
 
-    <p><b>Вид топлива</b><Br>
-        <input type="radio" name="browser" value="0"> бензин<Br>
-        <input type="radio" name="browser" value="-1000"> дизель<Br>
-        <input type="radio" name="browser" value="5000"> электро<Br>
-    </p>
-
-    <!-- <p><b>Объем двигателя</b><Br>
-        <input type="radio" name="browser" value="0"> 1.0<Br>
-        <input type="radio" name="browser" value="1000"> 1.2<Br>
-        <input type="radio" name="browser" value="2000"> 1.8<Br>
-        <input type="radio" name="browser" value="3000"> 2.0<Br>
-    </p> -->
-
-    <input type="submit" value="Рассчитать">
+    <div id="container"></div>
 
     <script src="index.js"></script>
 </body>
