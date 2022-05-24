@@ -7,13 +7,12 @@ document.getElementById('firms').onchange = function() {
             
     const fuel [[0, 'бензин'], [-1000, `дизель`], [5000, `электро`]]
     const volumes [[0, 1.0], [1000, 1.2], [2000, 1.8], [3000, 2.0]]
-    const types [[1000, `хетчбек`], [4000, `минивен`], [0, `седан`]]
     
     let values=[] // создаем массив, в который будем записывать опции
     document.getElementById('container').innerHTML=''
       
     if(value==70000){
-      select.disabled=true
+      select.disabled=true //прописать следующий селектор (объем движка)
       return
     }
         else if(value==30000){
