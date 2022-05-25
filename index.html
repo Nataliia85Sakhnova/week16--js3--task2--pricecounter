@@ -14,13 +14,32 @@
 
     <h2>Car-calculator</h2>
 
-    <select id="firms"><b>Марка автомобиля</b>
-        <option value="30000"> Toyota<Br>
-        <option value="2000"> VAZ<Br>
-        <option value="70000"> Tesla<Br>
+    <p>Марка автомобиля</p>
+    <select id="firms">
+        <option value="30000"> Toyota</option>
+        <option value="2000"> VAZ</option>
+        <option value="70000"> Tesla</option>
     </select>
 
     <div id="container"></div>
+
+
+    <span>
+        <input type="radio" id="sedan" name="type" value="0">
+        <label for="sedan"> Sedan </label>
+    </span>
+
+    <span>
+        <input type="radio" id="hatchback" name="type" value="1000" checked>
+        <label for="hatchback"> Hatchback </label>
+    </span>
+
+
+    <span>
+        <input type="checkbox" id="hot" name="hot" value="50">
+        <label for="hot" value="2000"> Подогрев сидений </label>
+    </span>
+    </form>
 
     <script src="index.js"></script>
 </body>
