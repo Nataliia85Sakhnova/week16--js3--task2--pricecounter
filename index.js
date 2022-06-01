@@ -9,12 +9,6 @@ const handlechange = () => {
     [-1000, `дизель`],
     [5000, `электро`]
   ]
-  const volume = [
-    [0, 1.0],
-    [1000, 1.2],
-    [2000, 1.3],
-    [3000, 2.0]
-  ]
 
   let values = []
   document.getElementById('container').innerHTML = ''
@@ -29,8 +23,8 @@ const handlechange = () => {
   console.log(values);
 
   const select = document.createElement("select");
-  select.name = 'volumes';
-  select.id = 'volumes';
+  select.name = 'fuel';
+  select.id = 'fuel';
 
   if (values.length === 1) {
     select.disabled = true
@@ -48,10 +42,13 @@ const handlechange = () => {
 }
 
 const firmPrice = document.getElementById('firms').value;
-console.log(document.getElementById('firms').value);
-// const fuelPrice = ;
-// const typePrice = document.getElementById('type').value;
-const hotAssPrice = fireAss.checked ? fireAss.value : 0;
+console.log(firmPrice);
+// const fuelPrice = document.getElementById('fuel').value;
+// console.log(fuelPrice);;
+// const typePrice = document.getElementByName('type').value;
+// console.log(typePrice);
+const fireAssPrice = fireAss.checked ? fireAss.value : 0;
+console.log(fireAssPrice);
 
 
 // document.getElementById('container').innerText = `Цена: ${Number(firmPrice) + Number(fuelPrice) + Number(typePrice) + Number(fireAssPrice)}€.`
