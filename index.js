@@ -41,17 +41,24 @@ const handlechange = () => {
   document.getElementById("container").appendChild(select);
 }
 
+const counting = () => {
+
 const firmPrice = document.getElementById('firms').value;
 console.log(firmPrice);
-// const fuelPrice = document.getElementById('fuel').value;
-// console.log(fuelPrice);;
-// const typePrice = document.getElementByName('type').value;
-// console.log(typePrice);
+
+const fuelPrice = document.getElementById('fuel').value;
+console.log(fuelPrice);;
+
+const typePrice = document.querySelector('input[name=type]:checked').value //'20'
+console.log(typePrice);
+
+const fireAss = document.getElementById("fireAss");
 const fireAssPrice = fireAss.checked ? fireAss.value : 0;
 console.log(fireAssPrice);
 
+document.getElementById('container1').innerText = `Цена: ${Number(firmPrice) + Number(fuelPrice) + Number(typePrice) + Number(fireAssPrice)}€.`
+}
 
-// document.getElementById('container').innerText = `Цена: ${Number(firmPrice) + Number(fuelPrice) + Number(typePrice) + Number(fireAssPrice)}€.`
-
+document.getElementById('button').onclick = counting;
 document.getElementById('firms').onchange = handlechange;
 document.addEventListener("DOMContentLoaded", handlechange);
